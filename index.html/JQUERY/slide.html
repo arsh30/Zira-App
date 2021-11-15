@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDE (USED FOR ANIMATION)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button class="slideDown">slide down</button>
+    <button class="slideUp">slide up</button>
+    <button class="toggle">Toggle</button>
+    <!-- <button class="slideUP">Slide Up</button>
+    <button class="toggle">toggle</button> -->
+    <p style="padding: 50px;"> I M LEARNING JQUERY THIS IS SLIDDING</p>
+
+   <script>
+    //    $(".slideDown").click(function(){
+    //        $("p").slideDown("slow");  //milli seconds string me nhi bhjte yeh
+    //    })
+    //    $(".slideUp").click(function(){
+    //        $("p").slideUp("slow");  //slide up just opp h slide down ka display none diya tha that why it is not showing
+    //    })
+       $(".toggle").click(function(){
+           $("p").slideToggle("slow");  //agar hide h to show and show h to hide
+       })
+   </script>
+        
+      
+</body>
+</html>

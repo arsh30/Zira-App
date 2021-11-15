@@ -1,0 +1,209 @@
+body{
+    margin: 0px;  /* body me sirf margin hota h */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12vh;
+    background-color:  rgb(48, 47, 47);
+    display: flex;
+}
+
+.ticket-container{
+    /* change in width */
+    /* min-height - > isse border pr bhi scroll baar aajega so that why we use overflow-y */
+    height: 88vh;
+    width: 100vw;
+    /* background-color: cornsilk; */
+    background-color: aquamarine;
+    position: relative;
+    /* idhr change kra h pehle position absolut thi */
+    padding: 3rem;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+    
+}
+.filter-container,
+.add-delete-container{
+    height: 8vh ; /* coz 8vh iska parent navbar h uski 12 h */
+    margin-top: 2vh;
+    margin-left: 8vw;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.filter-container{
+    width: 18vw; /* yeh khud assume krri*/
+    display: flex;
+}
+.add-delete-container{
+    width: 9vw;  /* filter conatiner me 4 btn h to idr usku half width hogi*/
+    display: flex;
+}
+
+.filter{
+    height: 100%;
+    width: 25%;
+}
+.pink-color-btn,
+.blue-color-btn,
+.yellow-color-btn,
+.green-color-btn{
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 3px;
+    margin-top: calc(8vh * 0.3);
+    margin-bottom: calc(8vh * 0.3);
+    margin-left: calc(4.5vw * 0.3);
+    margin-right: calc(4.5vw * 0.3);
+}
+.pink-color-btn, .modal-pink-filter, .ticket-color-pink{
+    background-color: pink;
+}
+.blue-color-btn, .modal-blue-filter, .ticket-color-blue{
+    background-color: rgb(23, 23, 95);
+}
+.yellow-color-btn , .modal-yellow-filter, .ticket-color-yellow{
+    background-color: yellow;
+}
+.green-color-btn, .modal-green-filter, .ticket-color-green{
+    background-color: rgb(8, 133, 8);
+}
+.filter:hover{
+    cursor: pointer;
+    background-color: #333;
+}
+.filter.active{
+    background-color: #333;
+}
+.add{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.action-btn{
+    display: block;
+    height: 40%;
+    width: 40%;
+    border-radius: 3px;
+    margin-top: calc(8vh * 0.3);
+    margin-bottom: calc(8vh * 0.3);
+    margin-left: calc(4.5vw * 0.3);
+    margin-right: calc(4.5vw * 0.3);
+    padding-left: auto;
+    /* padding-right: 15%; */
+}
+
+.add:hover,
+.delete:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+
+.modal{
+    /* we will assume this height and width */
+    box-shadow: 0px 0px 50px 35px grey;
+    height: 20rem;      
+    width: 35rem;
+    background-color: rgb(194, 240, 240);
+    display: flex;
+    position: absolute; 
+    /* absolute se position fix hojati h move nhi hoti */
+    top: 10rem;
+    left: calc((100vw - 35rem) / 2);
+}
+.task-to-be-typed{
+    width: 70%;
+    height: 100%;
+    padding: 3rem;  
+    /* padding di h coz taki vo cenetr mese likhna start ho */
+    outline: none;
+    overflow: auto;
+
+}
+.modal-prority-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.modal-filter {
+    /* inko sb btn ko same height and width denge */
+    width: 100%;
+    height: 20%;
+}
+.modal-filter:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.task-to-be-typed{
+    font-style: italic;
+    text-align: center;
+    font-size: large;
+    /* font-weight: 700; */
+}
+.modal-filter.active{
+    border: 3px solid ;
+}
+.ticket{
+    height: 10rem;
+    width: 16rem;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.ticket-color{
+    height: 10%;
+    width: 100%;
+}
+.ticket-id{
+    height: 20%;
+    width: 100%;
+    padding: 5%;
+    
+}
+.task{
+    height: 75%;
+    width: 100%;
+    padding: 5%;
+    font-style: italic;
+    font-size: larger;
+}
+.ticket.active {
+    /* active class hmne khud lgai h ik common dene k liye */
+    box-shadow: 0px 0px 3px 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
